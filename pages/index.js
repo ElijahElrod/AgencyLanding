@@ -1,13 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Navbar, useTheme, Button, Link, Text } from "@nextui-org/react";
+import { Navbar, useTheme, Button, Text, Textarea, Input, Spacer, Card, Row, Switch, Link } from "@nextui-org/react";
 import { Layout } from '../components/Layout';
 import { AcmeLogo } from '../components/AcmeLogo';
+import { SunIcon } from '../assets/icons/SunIcon';
+import { MoonIcon } from '../assets/icons/MoonIcon';
+import { useTheme as useNextTheme } from 'next-themes'
 
 export default function Home() {
-
+  const { setTheme } = useNextTheme();
   const { isDark } = useTheme();
+
+  const collapseItems = [
+    "Features",
+    "Customers",
+    "Pricing",
+    "Company",
+    "Legal",
+    "Team",
+    "Help & Feedback",
+    "Login",
+    "Sign Up",
+  ];
 
   return (
     <div className={styles.container}>
@@ -19,31 +34,75 @@ export default function Home() {
 
       <main className={styles.main}>
         <Layout>
-          <Navbar shouldHideOnScroll isBordered={isDark} variant="sticky">
+          <Navbar shouldHideOnScroll isBordered={isDark} variant="static">
             <Navbar.Brand>
               <AcmeLogo />
               <Text b color="inherit" hideIn="xs">
                 ACME
               </Text>
             </Navbar.Brand>
-            <Navbar.Content hideIn="xs" variant="underline">
+            <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
               <Navbar.Link href="#">Features</Navbar.Link>
               <Navbar.Link isActive href="#">Customers</Navbar.Link>
               <Navbar.Link href="#">Pricing</Navbar.Link>
               <Navbar.Link href="#">Company</Navbar.Link>
             </Navbar.Content>
+            <Navbar.Toggle aria-label="toggle navigation" showIn={"sm"} />
             <Navbar.Content>
               <Navbar.Link color="inherit" href="#">
                 Login
               </Navbar.Link>
               <Navbar.Item>
-                <Button auto flat as={Link} href="#">
-                  Sign Up
-                </Button>
+                <Switch
+                  checked={isDark}
+                  size="lg"
+                  onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+                  color="secondary"
+                  iconOn={<SunIcon filled />}
+                  iconOff={<MoonIcon filled />}
+                />
               </Navbar.Item>
             </Navbar.Content>
+            <Navbar.Collapse showIn={"sm"}>
+              {collapseItems.map((item, index) => (
+                <Navbar.CollapseItem key={item}>
+                  <Link
+                    color="inherit"
+                    css={{
+                      minWidth: "100%",
+                    }}
+                    href="#"
+                  >
+                    {item}
+                  </Link>
+                </Navbar.CollapseItem>
+              ))}
+            </Navbar.Collapse>
           </Navbar>
         </Layout>
+        <Card isHoverable variant="bordered" css={{ mw: "400px" }}>
+          <Card.Header>
+            <Text b>Contact Us</Text>
+          </Card.Header>
+          <Card.Divider />
+          <Card.Body>
+
+            <Input label="Company Name" />
+            <Spacer y={1} />
+            <Input label="Email" />
+            <Spacer y={1} />
+            <Textarea
+              label="Tell Us Your Amazing Ideas."
+            />
+          </Card.Body>
+          <Card.Footer>
+            <Row justify="center">
+
+              <Button size="sm" color="secondary">Submit</Button>
+            </Row>
+          </Card.Footer>
+        </Card>
+
       </main>
       <footer className={styles.footer}>
         <a
