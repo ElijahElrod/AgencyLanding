@@ -1,5 +1,6 @@
 import { Content } from "./Content.js"
 import { Box } from "./Box.js";
+import { Card, Textarea, Spacer, Row, Button, Input, Text} from '@nextui-org/react';
 
 export const Layout = ({ children }) => (
   <Box
@@ -7,9 +8,32 @@ export const Layout = ({ children }) => (
       maxW: "100%",
       position: "relative",
       overflow: "invisible scroll",
+      justify: "center"
     }}
   >
     {children}
     <Content />
+    <Card isHoverable variant="bordered" css={{ mw: "400px" }}>
+          <Card.Header>
+            <Text b>Contact Us</Text>
+          </Card.Header>
+          <Card.Divider />
+          <Card.Body>
+
+            <Input label="Company Name" />
+            <Spacer y={1} />
+            <Input label="Email" />
+            <Spacer y={1} />
+            <Textarea
+              label="Tell Us Your Amazing Ideas."
+            />
+          </Card.Body>
+          <Card.Footer>
+            <Row justify="center">
+
+              <Button size="sm" color="secondary">Submit</Button>
+            </Row>
+          </Card.Footer>
+        </Card>
   </Box>
 );

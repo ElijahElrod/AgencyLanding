@@ -43,15 +43,13 @@ export default function Home() {
             </Navbar.Brand>
             <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
               <Navbar.Link href="#">Features</Navbar.Link>
-              <Navbar.Link isActive href="#">Customers</Navbar.Link>
+              <Navbar.Link href="#">Customers</Navbar.Link>
               <Navbar.Link href="#">Pricing</Navbar.Link>
               <Navbar.Link href="#">Company</Navbar.Link>
             </Navbar.Content>
-            <Navbar.Toggle aria-label="toggle navigation" showIn={"sm"} />
+            <Navbar.Toggle aria-label="toggle navigation" showIn={"xs"} />
             <Navbar.Content>
-              <Navbar.Link color="inherit" href="#">
-                Login
-              </Navbar.Link>
+           
               <Navbar.Item>
                 <Switch
                   checked={isDark}
@@ -80,28 +78,7 @@ export default function Home() {
             </Navbar.Collapse>
           </Navbar>
         </Layout>
-        <Card isHoverable variant="bordered" css={{ mw: "400px" }}>
-          <Card.Header>
-            <Text b>Contact Us</Text>
-          </Card.Header>
-          <Card.Divider />
-          <Card.Body>
-
-            <Input label="Company Name" />
-            <Spacer y={1} />
-            <Input label="Email" />
-            <Spacer y={1} />
-            <Textarea
-              label="Tell Us Your Amazing Ideas."
-            />
-          </Card.Body>
-          <Card.Footer>
-            <Row justify="center">
-
-              <Button size="sm" color="secondary">Submit</Button>
-            </Row>
-          </Card.Footer>
-        </Card>
+        
 
       </main>
       <footer className={styles.footer}>
