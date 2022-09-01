@@ -15,27 +15,5 @@ export const PortfolioLayout = ({ children }) => (
   >
     {children}
     <PortfolioContent />
-    <Card isHoverable variant="bordered" css={{ mw: "400px", d: "flex", flexDirection: "column", alignItems: "center" }}>
-          <Card.Header>
-            <Text b>Contact Us</Text>
-          </Card.Header>
-          <Card.Divider />
-          <Card.Body>
-
-            <Input label="Company Name" />
-            <Spacer y={1} />
-            <Input label="Email" />
-            <Spacer y={1} />
-            <Textarea
-              label="Tell Us Your Amazing Ideas."
-            />
-          </Card.Body>
-          <Card.Footer>
-            <Row justify="center">
-
-              <Button size="sm" color="secondary">Submit</Button>
-            </Row>
-          </Card.Footer>
-        </Card>
   </Box>
 );

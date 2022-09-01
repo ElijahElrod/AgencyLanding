@@ -22,7 +22,7 @@ export const Layout = ({ children }) => (
           <Card.Divider />
           <Card.Body>
 
-            <Input label="Company Name" />
+            <Input label="Company Name" borderWeight="bold" />
             <Spacer y={1} />
             <Input label="Email" />
             <Spacer y={1} />

@@ -41,7 +41,7 @@ export const Content = () => (
     <Container >
       <Text size="$4xl" h2> 3 Steps to fufilling your vision.</Text>
       <Grid.Container gap={2}>
-        <Grid xs={4}>
+        <Grid  xs={12} sm={6} md={4}>
           <Card isHoverable>
             <Card.Header>
               <Text b>Step 1: Identifying your needs</Text>
@@ -63,7 +63,7 @@ export const Content = () => (
             </Card.Body>
           </Card>
         </Grid>
-        <Grid xs={4}>
+        <Grid  xs={12} sm={6} md={4}>
           <Card isHoverable>
             <Card.Header>
               <Text b>Step 2: UI Workshops & Development</Text>
@@ -86,7 +86,7 @@ export const Content = () => (
             </Card.Body>
           </Card>
         </Grid>
-        <Grid xs={4}>
+        <Grid  xs={12} sm={6} md={4}>
           <Card isHoverable>
             <Card.Header>
               <Text b>Step 3: Maintenance & Training</Text>
@@ -115,11 +115,12 @@ export const Content = () => (
     <ContactButton />
     <Spacer y={2} />
     <Text size="$4xl" h2>The only software agency you'll need.</Text>
-    <Text size="$md">
-      CompanyNameHere is a software agency, that designs and develops enterprise software solutions for businesses like you. We specialize in full-stack development,
-      and blockchain technology, but also offer additional services like maintenance and Upskilling. We come experienced in developing scalable
-      and distributed systems from years working for Fortune 50s and GColth companies
-      such as J.P Morgan, Citi, & AdTheorent.
+    <Text size="$xl" weight={"semibold"}>
+      Shösansei Software is a full-service agency designed to create innovative solutions for your business. We design and develop enterprise software solutions side-by-side with you so you can focus on growing your business.
+      We specialize in full-stack development, and blockchain technology, but also offer additional services like maintenance and training for your employees. 
+      <br></br>
+      <br></br>
+      We come experienced in developing scalable and distributed systems from years working for Fortune 50s and Growth companies like J.P Morgan, Citi, & AdTheorent.
     </Text>
     <Spacer y={1} />
   </Box>

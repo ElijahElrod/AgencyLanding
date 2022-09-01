@@ -148,7 +148,7 @@ export const PortfolioContent = () => (
 
         <Spacer y={3} />
 
-        <Text size="$4xl" h2>Interested In What We Can Build For Your Business?</Text>
+        <Text size="$4xl" h2>Interested In Solutions For Your Business?</Text>
         <ContactButton />
         <Spacer y={1} />
     </Box>
