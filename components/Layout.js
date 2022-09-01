@@ -8,12 +8,14 @@ export const Layout = ({ children }) => (
       maxW: "100%",
       position: "relative",
       overflow: "invisible scroll",
-      justify: "center"
+      d: "flex",
+      flexDirection: "column",
+      alignItems: "center"
     }}
   >
     {children}
     <Content />
-    <Card isHoverable variant="bordered" css={{ mw: "400px" }}>
+    <Card isHoverable variant="bordered" css={{ mw: "400px", d: "flex", flexDirection: "column", alignItems: "center" }}>
           <Card.Header>
             <Text b>Contact Us</Text>
           </Card.Header>
