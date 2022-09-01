@@ -5,7 +5,7 @@ import { Card, Textarea, Spacer, Row, Button, Input, Text} from '@nextui-org/rea
 export const Layout = ({ children }) => (
   <Box
     css={{
-      maxW: "100%",
+      maxW: "85%",
       position: "relative",
       overflow: "invisible scroll",
       d: "flex",
