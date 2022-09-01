@@ -8,7 +8,7 @@ export const PortfolioContent = () => (
         <Container >
             <Text size="$4xl" h2>Web3.0 / Blockchain Projects</Text>
             <Grid.Container  gap={2}>
-                <Grid xs={12} sm={6} md={4}>
+                <Grid xs={12} sm={12} md={4}>
                     <Card isHoverable>
                         <Card.Header>
                             <Text b>WalletMaestro</Text>
@@ -29,7 +29,7 @@ export const PortfolioContent = () => (
                         </Card.Body>
                     </Card>
                 </Grid>
-                <Grid xs={12} sm={6} md={4}>
+                <Grid xs={12} sm={12} md={4}>
                     <Card isHoverable>
                         <Card.Header>
                             <Text b>MintBear.xyz</Text>
@@ -51,7 +51,7 @@ export const PortfolioContent = () => (
                         </Card.Body>
                     </Card>
                 </Grid>
-                <Grid xs={12} sm={6} md={4}>
+                <Grid xs={12} sm={12} md={4}>
                     <Card isHoverable>
                         <Card.Header>
                             <Text b>Step 3: Maintenance & Training</Text>
@@ -79,7 +79,7 @@ export const PortfolioContent = () => (
         <Container >
             <Text size="$4xl" h2>Web & Mobile</Text>
             <Grid.Container gap={2}>
-                <Grid xs={12} sm={6} md={4}>
+                <Grid xs={12} sm={12} md={4}>
                     <Card isHoverable>
                         <Card.Header>
                             <Text b>Althos</Text>
@@ -100,7 +100,7 @@ export const PortfolioContent = () => (
                         </Card.Body>
                     </Card>
                 </Grid>
-                <Grid xs={12} sm={6} md={4}>
+                <Grid xs={12} sm={12} md={4}>
                     <Card isHoverable>
                         <Card.Header>
                             <Text b>Channelist.io</Text>
