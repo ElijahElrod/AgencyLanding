@@ -31,10 +31,16 @@ export const Content = () => (
       tellus orci ac.
     </Text>
     <Spacer y={1} />
-    <Text size="$lg">Hero Section</Text>
-    <Text size="$md">
+    <Text size="$4xl" h2>Hero Section</Text>
+    <Text size="$lg" weight={"semibold"}>
       We are a full-service software development agency that provides software solutions for businesses like you. Our backgrounds are rooted in
-      full-stack development and blockchain solutions.
+      full-stack development and blockchain solutions. We understand that development projects can be expensive, and so we offer two different plans for project funding:
+      <br></br>
+      <br></br>
+      Option 1: Project is funded by 100% cash
+      <br></br>
+      Option 2: Project is funding by a small deposit upfront, and provides 20% Profit Share for development services (i.e. We take 20% MRR on a recurring basis).
+      <br></br>
       * Grab Emails here *
     </Text>
     <Spacer y={1} />

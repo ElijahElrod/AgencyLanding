@@ -18,19 +18,20 @@ export default function Home() {
       <main className={styles.main}>
         <Layout>
           <Content />
-          <Card isHoverable variant="bordered" css={{ mw: "400px", d: "flex", flexDirection: "column", alignItems: "center" }}>
+          <Card isHoverable variant="bordered" css={{ mw: "20%", d: "flex", flexDirection: "column", alignItems: "flex-start" }}>
             <Card.Header>
               <Text b>Contact Us</Text>
             </Card.Header>
             <Card.Divider />
             <Card.Body>
 
-              <Input label="Company Name" borderWeight="bold" />
+              <Input label="Company Name" borderWeight="bold" css={{ width: "100%"}} />
               <Spacer y={1} />
-              <Input label="Email" />
+              <Input label="Email" css={{ width: "100%"}}/>
               <Spacer y={1} />
               <Textarea
                 label="Tell Us Your Amazing Ideas."
+                css={{ width: "100%"}}
               />
             </Card.Body>
             <Card.Footer>
