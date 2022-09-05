@@ -37,9 +37,9 @@ export const Content = () => (
       full-stack development and blockchain solutions. We understand that development projects can be expensive, and so we offer two different plans for project funding:
       <br></br>
       <br></br>
-      Option 1: Project is funded by 100% cash
+      Option 1: Project is funded by 100% cash + crypto
       <br></br>
-      Option 2: Project is funding by a small deposit upfront, and provides 20% Profit Share for development services (i.e. We take 20% MRR on a recurring basis).
+      Option 2: Project is funding by a deposit upfront, and provides 20% Profit Share for development services (i.e. We take 20% MRR on a recurring basis).
       <br></br>
       * Grab Emails here *
     </Text>
